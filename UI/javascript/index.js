@@ -10,7 +10,7 @@ function renderTech() {
     for (let i = 0; i < newTech.length; i++) {
         stringHTML += `
         <div class="col l-2 m-4 c-4">
-            <a href="" class="tech_icon-link">
+            <a href="" class="tech_icon-link" title="${newTech[i].name}">
                 <div class="tech_icon-img" style="background-image: url(${newTech[i].image});">
                 </div>
             </a>

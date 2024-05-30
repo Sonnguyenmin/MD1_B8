@@ -35,6 +35,7 @@ btnCancel.addEventListener('click', () => {
     description.value = "";
     profileTitle.innerText = "Thêm Dự án";
     idUpdate = null;
+
     btnSubmit.innerText = "Thêm";
 });
 
@@ -179,6 +180,7 @@ function checkErrors() {
     const profiles = JSON.parse(localStorage.getItem(PROFILE_LOCAL)) || [];
     let flag = true;
     let index = profiles.findIndex(item => item.name === nameProfile.value);
+
     if (index !== -1) {
         flag = false;
         showError('errorName', "Tên dự án đã tồn tại");
